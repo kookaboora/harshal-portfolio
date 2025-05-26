@@ -10,7 +10,7 @@ export interface Project {
   image: string
   github: string
   demo: string
-  createdAt: any
+  
 }
 
 export const useProjects = () => {

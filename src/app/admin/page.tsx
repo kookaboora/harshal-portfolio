@@ -33,13 +33,17 @@ export default function AdminPage() {
   }, [])
 
   // Handle login
-  const handleLogin = async () => {
-    try {
-      await signInWithEmailAndPassword(auth, email, password)
-    } catch (error: any) {
+ const handleLogin = async () => {
+  try {
+    await signInWithEmailAndPassword(auth, email, password)
+  } catch (error: unknown) {
+    if (error instanceof Error) {
       alert(error.message)
+    } else {
+      alert('An unknown error occurred.')
     }
   }
+}
 
   // Handle logout
   const handleLogout = async () => {
@@ -65,18 +69,22 @@ export default function AdminPage() {
         createdAt: new Date(),
       })
 
-      alert('Project added!')
-      setProject({
-        title: '',
-        description: '',
-        tech: '',
-        image: '',
-        github: '',
-        demo: '',
-      })
-    } catch (error: any) {
+  alert('Project added!')
+    setProject({
+      title: '',
+      description: '',
+      tech: '',
+      image: '',
+      github: '',
+      demo: '',
+    })
+  } catch (error: unknown) {
+    if (error instanceof Error) {
       alert(error.message)
+    } else {
+      alert('An unknown error occurred while saving the project.')
     }
+  }
   }
 
   // Render login form if not logged in
