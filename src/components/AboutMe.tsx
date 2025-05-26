@@ -65,7 +65,7 @@ export default function AboutMe() {
             Who am I?
           </h2>
           <p className="text-lg leading-relaxed text-gray-300 max-w-xl">
-            I'm Harshal Patel, a Fullstack Developer with 3 years of experience crafting interactive, scalable, and visually compelling web apps. I love blending modern frontend design with robust backend logic — and lately, I have been diving into AI to supercharge user experiences.
+            I am Harshal Patel, a Fullstack Developer with 3 years of experience crafting interactive, scalable, and visually compelling web apps. I love blending modern frontend design with robust backend logic — and lately, I have been diving into AI to supercharge user experiences.
           </p>
           <p className="mt-4 text-md text-indigo-400 font-medium">
             My goal? Build interfaces that feel like magic — and systems that scale like machines.
