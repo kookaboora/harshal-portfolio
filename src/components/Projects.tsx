@@ -11,7 +11,7 @@ export default function Projects() {
   if (loading) return <p className="text-center">Loading...</p>
 
   return (
-    <section id="projects" className="py-24 px-4 bg-white dark:bg-gray-950">
+    <section id="Projects" className="py-24 px-4 bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 dark:text-white">Projects</h2>
         <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg">Here’s a selection of my recent fullstack work.</p>
